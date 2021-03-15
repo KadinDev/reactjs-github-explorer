@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],                               
+    "allowJs": true, // esse permite ter files tanto em JS como em TS                      
+    "jsx": "react-jsx",                          
+    "noEmit": true,                             
+    "strict": true, // é um módulo de lidar com erros no JS                                 
+    "moduleResolution": "node",                  
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,        
+    "esModuleInterop": true,                        
+    "skipLibCheck": true,                           
+    "forceConsistentCasingInFileNames": true        
+  },
+  "include": ["src"] // estamos dizendo para o Typescript que todo o código da nossa aplicação vai estar dentro da pasta src
+}

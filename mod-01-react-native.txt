@@ -1,0 +1,41 @@
+BABEL
+converte o código para que os navegadores possam entender os códigos
+yarn add @babel/core @babel/cli @babel/preset-env -D
+------------
+Para ele entender o código react que tem tags dentro. ex: h1 ...
+yarn add @babel/preset-react -D
+------------
+Criando pasta e file com o código convertido com babel
+pegando o index na paste src, converte, e cria uma pasta dist com o file bundle.js recebendo o código convertido
+yarn babel src/index.js --out-file dist/bundle.js
+-------------------
+
+WEBPACK
+yarn add webpack webpack-cli -D
+
+yarn add babel-loader
+(ele é a integração entre o babel e o webpack)
+
+----
+yarn add webpack-dev-server -D
+recarregamento automático 
+
+---- 
+Criando váriaveis de ambientes
+yarn add cross-env -D 
+Serve definir variaveis de ambientes independent do sistema operacional da pessoa
+
+"scripts": {
+    // script para desenvolvimento
+    "dev": "webpack serve",
+    // script para produção
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+
+SASS LOADER
+yarn add node-sass -D
+yarn add sass-loader -D
+
+
+
+

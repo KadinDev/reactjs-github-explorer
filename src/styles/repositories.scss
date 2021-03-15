@@ -1,0 +1,39 @@
+section.repository-list {
+    margin: 40px
+}
+
+h1 {
+    margin-bottom: 16px;
+    margin-left: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    strong {
+        opacity: 0.8;
+    }
+
+    & + li { /*vai pegar todas as li da primeira em diante e aplicar o style*/
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        color: #444;
+        margin-top: 8px;
+    }
+
+    a {
+        display: inline-block; /* quando inline-block no a, permite ele receber margin */
+        margin-top: 16px;
+        border-bottom: solid 1px #000;
+        width: 50%;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: #8259e6;
+    }
+}
